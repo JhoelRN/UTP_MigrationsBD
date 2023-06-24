@@ -1,0 +1,47 @@
+# /vendor/
+# node_modules/
+# npm-debug.log
+# yarn-error.log
+
+# # Laravel 4 specific
+# bootstrap/compiled.php
+# app/storage/
+
+# # Laravel 5 & Lumen specific
+# public/storage
+# public/hot
+
+# # Laravel 5 & Lumen specific with changed public path
+# public_html/storage
+# public_html/hot
+
+# storage/*.key
+# # .env
+# Homestead.yaml
+# Homestead.json
+# /.vagrant
+# .phpunit.result.cache
+# vendor/composer/autoload_classmap.php
+# vendor/autoload.php
+# vendor/composer/platform_check.php
+# vendor/autoload.php
+# vendor/composer/autoload_classmap.php
+# vendor/composer/autoload_classmap.php
+# vendor/composer/autoload_classmap.php
+# vendor/composer/autoload_classmap.php
+# vendor/composer/autoload_classmap.php
+# vendor/composer/autoload_psr4.php
+# vendor/composer/platform_check.php
+# vendor/composer/autoload_classmap.php
+# vendor/autoload.php
+# vendor/composer/autoload_namespaces.php
+# vendor/composer/autoload_psr4.php
+# vendor/composer/autoload_real.php
+# vendor/composer/autoload_static.php
+# vendor/composer/ClassLoader.php
+# vendor/composer/installed.json
+# vendor/composer/installed.php
+# vendor/composer/InstalledVersions.php
+# vendor/composer/LICENSE
+# vendor/composer/platform_check.php
+# vendor/autoload.php
