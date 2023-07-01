@@ -16,8 +16,9 @@ class Cita extends Migration
         Schema::create('cita', function (Blueprint $table) {
             $table->id();
             $table->uuid('unique_id')->unique();
-            $table->date('fecha')->nullable();
-            $table->enum('hora', ['00hrs','07hrs','08hrs' ,'09hrs', '10hrs', '11hrs', '12hrs', '13hrs', '14hrs', '15hrs', '16hrs', '17hrs', '18hrs', '19hrs', '20hrs', '21hrs', '22hrs'])->default('00hrs')->nullable();
+            $table->string('fecha_hora')->nullable();
+            $table->string('fecha_hora_end')->nullable();
+            // $table->enum('hora', ['00hrs','07hrs','08hrs' ,'09hrs', '10hrs', '11hrs', '12hrs', '13hrs', '14hrs', '15hrs', '16hrs', '17hrs', '18hrs', '19hrs', '20hrs', '21hrs', '22hrs'])->default('00hrs')->nullable();
             // $table->time('hora')->nullable();
             // $table->string('numero')->nullable();
             // $table->enum('estado', ['ACTIVO', 'INACTIVO'])->default('ACTIVO');

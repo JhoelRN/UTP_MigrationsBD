@@ -15,31 +15,35 @@ class CitaSeeder extends Seeder
      */
     public function run()
     {
-        array_map(function ($cliente_id, $tecnico_id, $servicio_id){
+        array_map(function ($cliente_id, $tecnico_id, $servicio_id, $sala_id) {
             DB::table('cita')->insert([
                 'unique_id' => Str::uuid(),
-                'fecha' => now(),
-                // 'hora' => now(),
+                'fecha_hora' => now(),
+                'fecha_hora_end' => now()->addHour(),
                 'estado' => 'activo',
                 // 'created_at' => now(),
                 // 'updated_at' => now(),
                 'cliente_id' => $cliente_id,
                 'tecnico_id' => $tecnico_id,
                 'servicio_id' => $servicio_id,
-                // 'vehiculo_id' => $vehiculo_id,
+                'sala_id' => $sala_id,
             ]);
-        },[
+        }, [
             2,
             3,
             4,
-        ],[
+        ], [
             8,
             9,
             10,
-        ],[
+        ], [
             3,
             4,
             5,
+        ], [
+            1,
+            2,
+            3,
         ]);
     }
 }
